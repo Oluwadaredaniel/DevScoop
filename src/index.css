@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply min-h-screen w-full overflow-x-hidden;
+  background-color: #0f1117; /* deep charcoal */
+  font-family: 'Inter', 'Montserrat', sans-serif;
+  color: #e0f2ff;
+}
+
+/* Glassmorphism utility class */
+.glass {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px rgba(0, 255, 255, 0.08);
+  border-radius: 1rem;
+}
+
+/* Neon glow hover effect */
+.glow-hover {
+  transition: all 0.3s ease-in-out;
+}
+.glow-hover:hover {
+  box-shadow: 0 0 12px #1be7ff;
+}
+
+/* Accent color text */
+.accent {
+  color: #1be7ff;
+}
