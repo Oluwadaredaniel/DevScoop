@@ -31,3 +31,26 @@ body {
 .accent {
   color: #1be7ff;
 }
+
+
+/* This CSS targets the GitHub OAuth button specifically */
+.clerk-sign-in .clerk-oauth-button[aria-label*="GitHub"] {
+  background-color: white !important;
+  color: black !important;
+  border-radius: 12px !important;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.15) !important;
+  border: 1px solid #ccc !important;
+}
+
+.clerk-sign-in .clerk-oauth-button[aria-label*="GitHub"]:hover {
+  background-color: #f0f0f0 !important;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.25) !important;
+}
+
+.clerk-sign-in .clerk-oauth-button[aria-label*="GitHub"] svg {
+  fill: black !important; /* Make sure GitHub icon is visible */
+}
+
+.animatedButton{
+  animation-duration: 10000ms;
+}

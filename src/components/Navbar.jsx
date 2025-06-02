@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react";
 import Image from "./image.jsx";
 import { Link } from "react-router-dom";
+import { SignedIn, SignedOut, SignInButton, UserButton } from '@clerk/clerk-react';
+
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -104,11 +106,16 @@ const Navbar = () => {
         >
           About
         </Link>
+        <SignedOut>
         <Link to="/login">
           <button className="py-2 px-5 rounded-3xl bg-electric text-white glow-hover transition">
             Login 👋
           </button>
         </Link>
+        </SignedOut>
+      <SignedIn>
+        <UserButton />
+      </SignedIn>
       </div>
     </div>
   );
