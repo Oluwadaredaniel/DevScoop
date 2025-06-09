@@ -7,7 +7,11 @@ const FeaturedPosts = () => {
       {/* FIRST */}
       <div className="w-full lg:w-1/2 flex flex-col gap-4 p-4 rounded-3xl border border-blue-900/30 bg-[#1B1E2A]/60 backdrop-blur-md shadow-lg transition-all duration-300 hover:shadow-blue-700/30 hover:border-blue-500/50">
         {/* IMAGE */}
-        <Image src="featured1.jpeg" className="rounded-3xl object-cover" />
+        <Image
+          src="featured1.jpeg"
+          className="rounded-3xl object-cover"
+          w="895"
+        />
 
         {/* DETAILS */}
         <div className="flex items-center gap-4 text-sm text-gray-400">
@@ -34,10 +38,9 @@ const FeaturedPosts = () => {
       <div className="lg:w-1/2 flex flex-col gap-4">
         {/* SECOND */}
         <div className="flex justify-between gap-4 p-4 rounded-3xl border border-blue-900/20 bg-[#1B1E2A]/50 backdrop-blur-md hover:border-blue-500/40 hover:shadow-blue-800/20 transition-all">
-          <Image
-            src="featured2.jpeg"
-            className="rounded-3xl object-cover w-1/3 aspect-video"
-          />
+          <div className="w-1/3 aspect-video">
+            <Image src="featured2.jpeg" className="rounded-3xl object-cover" w="298"/>
+          </div>
           <div className="w-2/3 text-white">
             <div className="flex items-center gap-4 text-sm text-gray-400 mb-2">
               <h1 className="font-semibold text-blue-400">02.</h1>
@@ -60,10 +63,9 @@ const FeaturedPosts = () => {
 
         {/* THIRD */}
         <div className="flex justify-between gap-4 p-4 rounded-3xl border border-blue-900/20 bg-[#1B1E2A]/50 backdrop-blur-md hover:border-blue-500/40 hover:shadow-blue-800/20 transition-all">
-          <Image
-            src="featured3.jpeg"
-            className="rounded-3xl object-cover w-1/3 aspect-video"
-          />
+          <div className="w-1/3 aspect-video">
+            <Image src="featured3.jpeg" className="rounded-3xl object-cover " w="298"/>
+          </div>
           <div className="w-2/3 text-white">
             <div className="flex items-center gap-4 text-sm text-gray-400 mb-2">
               <h1 className="font-semibold text-blue-400">03.</h1>
@@ -86,10 +88,9 @@ const FeaturedPosts = () => {
 
         {/* FOURTH */}
         <div className="flex justify-between gap-4 p-4 rounded-3xl border border-blue-900/20 bg-[#1B1E2A]/50 backdrop-blur-md hover:border-blue-500/40 hover:shadow-blue-800/20 transition-all">
-          <Image
-            src="featured4.jpeg"
-            className="rounded-3xl object-cover w-1/3 aspect-video"
-          />
+          <div className="w-1/3 aspect-video">
+            <Image src="featured4.jpeg" className="rounded-3xl object-cover" w="298"/>
+          </div>
           <div className="w-2/3 text-white">
             <div className="flex items-center gap-4 text-sm text-gray-400 mb-2">
               <h1 className="font-semibold text-blue-400">04.</h1>

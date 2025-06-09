@@ -1,8 +1,7 @@
 import { Link } from "react-router-dom";
-import MainCategories from '../components/MainCategories'; 
+import MainCategories from "../components/MainCategories";
 import FeaturedPosts from "../components/FeaturedPosts";
-
-
+import PostList from "../components/PostList";
 
 const Homepage = () => {
   return (
@@ -96,10 +95,16 @@ const Homepage = () => {
       </div>
 
       {/* CATEGORIES */}
-      <MainCategories/>
+      <MainCategories />
       {/* FEATURED POSTS */}
-      <FeaturedPosts/>
+      <FeaturedPosts />
       {/* POST LIST */}
+      <div className="mt-12 p-4 rounded-3xl border border-blue-900/30 bg-[#1B1E2A]/60 backdrop-blur-md shadow-lg">
+        <h1 className="mb-6 text-2xl font-semibold text-blue-400">
+          Recent Posts
+        </h1>
+        <PostList />
+      </div>
     </div>
   );
 };
